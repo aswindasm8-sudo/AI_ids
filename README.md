@@ -1,8 +1,8 @@
- 🛡 AI-Powered Intrusion Detection System (IDS)
+ AI-Powered Intrusion Detection System (IDS)
 An AI-driven Intrusion Detection System that detects malicious network activity in real time using an unsupervised deep learning Autoencoder model trained on the CICIDS2017 dataset.
 Supports offline training & evaluation and live packet capture for real-world anomaly detection.
 
-🚀 Features
+ Features
 Anomaly-Based Detection – Uses an Autoencoder trained only on benign traffic to detect anomalies.
 
 Offline Mode – Preprocess & analyze CICIDS2017 dataset CSVs.
@@ -15,7 +15,7 @@ Alerting System – Prints alerts to console & logs them to alerts.log with time
 
 Customizable Threshold – Adjust anomaly sensitivity without retraining.
 
-🏗 Tech Stack
+Tech Stack
 Python 3.10+
 
 TensorFlow/Keras – Autoencoder neural network
@@ -28,7 +28,7 @@ Scapy – Live packet capture and flow extraction
 
 Joblib – Save/load pre-trained scaler
 
-📂 Project Structure
+ Project Structure
 text
 ai_ids_project/
 ├── data_preprocessing.py     # Dataset cleaning & preprocessing
@@ -40,7 +40,7 @@ ai_ids_project/
 ├── alerts.log                # Logs all anomaly alerts
 └── data/
     └── cicids2017/           # Dataset files
-⚙ Installation
+ Installation
 Clone the repository
 
 bash
@@ -90,12 +90,12 @@ Predicts anomalies using trained Autoencoder
 
 Prints/logs alerts in real time
 
-📡 Example Alert
+ Example Alert
 text
 [ALERT] 2025-08-12 18:05:12 | Flow: ('192.168.1.10', '8.8.8.8', 56789, 53, 17) | Anomaly score: 0.034512
 This will also be saved in alerts.log for later review.
 
-🧠 How It Works
+ How It Works
 Data Preprocessing → Clean and scale CICIDS2017 dataset.
 
 Model Training → Autoencoder learns normal network flow patterns.
